@@ -1,0 +1,72 @@
+@media screen and (max-width:992px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "main-one main-one"
+        "main-two main-five"
+        "main-three main-three-two"
+        "main-seven main-four"
+        "main-six main-four"
+        "footer-one footer-one"
+        "footer-two footer-two"
+        ;
+    }
+    .main-four-disk-img img{
+        width: 70%;
+    }
+    .main-four-detalis{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main-one"
+        "main-one"
+        "main-two"
+        "main-five"
+        "main-three"
+        "main-three-two"
+        "main-seven"
+        "main-six"
+        "main-four"
+        "main-four"
+        "footer-one"
+        "footer-two"
+        ;
+    }
+    .main-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .main-three{
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* خط خفيف أسفل الصورة */
+
+    }
+    .main-three-two{
+        width: 80%;
+        margin: auto;
+    }
+    .main-four{
+        padding: 30px 30px;
+    }
+    .main-four-disk-img img{
+        width: 70%;
+    }
+    .main-four-detalis{
+        width: 80%;
+    }
+}
